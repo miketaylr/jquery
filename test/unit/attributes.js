@@ -4,7 +4,7 @@ var bareObj = function(value) { return value; };
 var functionReturningObj = function(value) { return (function() { return value; }); };
 
 test("attr(String)", function() {
-	expect(30);
+	expect(31);
 
 	// This one sometimes fails randomly ?!
 	equals( jQuery('#text1').attr('value'), "Test", 'Check for value attribute' );
@@ -20,6 +20,7 @@ test("attr(String)", function() {
 	equals( jQuery('#simon').attr('class'), "blog link", 'Check for class attribute' );
 	equals( jQuery('#name').attr('name'), "name", 'Check for name attribute' );
 	equals( jQuery('#text1').attr('name'), "action", 'Check for name attribute' );
+	equals( jQuery('#t6708').attr('usemap'), "#usemaptest", 'Check for usemap attribute' );
 	ok( jQuery('#form').attr('action').indexOf("formaction") >= 0, 'Check for action attribute' );
 	// Temporarily disabled. See: #4299
 	// ok( jQuery('#form').attr('action','newformaction').attr('action').indexOf("newformaction") >= 0, 'Check that action attribute was changed' );
