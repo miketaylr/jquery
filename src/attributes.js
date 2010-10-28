@@ -3,7 +3,7 @@
 var rclass = /[\n\t]/g,
 	rspaces = /\s+/,
 	rreturn = /\r/g,
-	rspecialurl = /^(?:href|src|style)$/,
+	rspecialurl = /^(?:href|src|style|usemap)$/,
 	rtype = /^(?:button|input)$/i,
 	rfocusable = /^(?:button|input|object|select|textarea)$/i,
 	rclickable = /^a(?:rea)?$/i,
